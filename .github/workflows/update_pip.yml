@@ -19,11 +19,6 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
 
-      - name: Install GitHub CLI
-        uses: actions/gh-cli@v1
-        with:
-          version: 'latest'
-
       - name: Run the update script
         run: |
           .github/workflows/update_supported_pip.sh
