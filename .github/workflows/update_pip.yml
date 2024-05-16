@@ -2,7 +2,8 @@ name: Check and update supported pip
 
 on:
   push:
-    "*"
+    branches:
+      - '**'
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight
   workflow_dispatch:  # Allows manual triggering
